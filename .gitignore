@@ -1,0 +1,22 @@
+# Source data — ~85 MB compressed. Fetch with: python src/download_data.py
+data/*.csv.gz
+data/*.geojson
+data/*.csv
+
+# powerbi/*.csv IS committed (~4 MB): the build kit is only useful if someone can
+# open Power BI Desktop and load the model without first running the pipeline.
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
